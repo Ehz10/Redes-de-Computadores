@@ -17,4 +17,24 @@ Protocolos:
 
 Estrutura de mensagens de protocolos:
   ->Nota: ver imagem "estrutura_mensagens_protocolos"<-
-  
+  SIGLAS:
+    -PDU: Protocol Data Unit (Mensagem de Protocolo)
+    -SDU: Service Data Unit (Dados transferidos entre a entidade n e a entidade n-1;
+    -PCI: Protocol Control Information (Identificador + parâmetros de protocolo do PDU)
+
+Objetivos da segmentação de dados:
+  -Redução dos atrasos de tempo de transmissão
+  -Redução das dimensões das filas de espera de buffers dos nós de rede
+  -Adaptação a formato de prtocolos de camadas inferiores
+  -Respeitar MTU (Maximum Transmission Unit) de redes
+  -Possibilidade de intermediar pacotes de diferentes users
+
+Cabeçalhos:
+  -Campo com informação de controlo dos protocolos
+  -Necessários para novos pacotes após divisão de dados na Origem
+  -Maior complexidade -> introdução de mais informação de controlo
+    .Menor tamanho de pacotes -> + % de informação de controlo
+    .Convém existir compromisso entre tamanho de campos de dados e cabeçalho => tirar vantagem de dimensão de pacotes + pequenos, mas sem demasiado peso de informação de controlo
+      ->Aconselhável cabeçalho/dados inferior a 10%
+  ->Nota: ver imagem "cabecalhos"<-
+
