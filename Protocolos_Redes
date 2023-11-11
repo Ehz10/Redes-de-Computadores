@@ -1,0 +1,20 @@
+PROTOCOLOS DE REDES
+
+Protocolos:
+  Regras para possibilitar a comunicação entre diferentes elementos de rede com possíveis diferentes formas de representar a mesma informação
+    -Modularidade:
+      .Funcionalidades da rede são distribuídas por camadas
+      .Facilidade gestão de funcionalidades da rede
+    -Abstração
+      .Users apenas têm que saber interagir com aplicação
+      .Users não têm de se preocupar com os mecanismos de transporte de dadosna rede
+    -Hierarquização:
+      .Cada camada interage apenas com as camadas vizinhas
+        ->Cada camada requisita serviços à camada inferior e fornece serviços à camada superior
+        ->Números camdas pode variar por protocolo
+      .Camadas iguais em diferentes elementos de rede comunicam entre si através de um protocolo igual ou semelhante
+      .Transporte de dados ocorre sempre ao nível da camada mais baixa
+
+Estrutura de mensagens de protocolos:
+  ->Nota: ver imagem "estrutura_mensagens_protocolos"<-
+  
