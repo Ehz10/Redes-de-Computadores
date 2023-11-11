@@ -17,14 +17,67 @@ Características dos protocolos:
   -Controlo de fluxo: possibilidade de Recetor informar Emissor de quantidade de dados
 
 Comutação de CS (circuito switch):
+Mensagens com dados da mesma ligação efetuam sempre o mesmo percurso em circuito pré-estabelecido e dedicado para a comunicação
   -Necessário conquistar vários troços dedicados de rede, desde o emissor até ao recetor
   -Possibilidade de náo ser possível transmissão de mensagens por congestionamento de rede
   -Após estabelecimento de ligação não existem atrasos de propagação
   -Apropriado para ligações de ritmo constante
 
 Comutação Pacotes (Packet Switch):
+Pacotes P1 e P2 com mesmo endereço de Origem e Destino podem efetuar percursos diferentes (ou iguais)
+Pacotes Px e Py de outros users partilham os mesmos recursos de rede.
   -Mensagens de users e aplicações usam recursos de rede não usam ligações dedicadas
     .Não é necessário estabelecimento de circuito dedicado, entre emissor e recetor
       ->Sempre possível transmissão de mensagens do emissor para a rede
     .Necessidade de processamento de mensagens em nós
       ->Possibilidade de existência de atrasos(sobrecarga)
+
+LINHAS COMUTADAS/ALUGADAS
+
+Linha Comutada:
+  -Cirsuíto temporário e preveamente estabelecido antes de se iniciar comunicação
+  -Ligação dedicada estabelecida apenas durante o intervalo de tempo necessário para a transmissão de informação entre 2 entidades
+  -Após a terminação de ligação, os recursos ocupados são libertados
+  -Apropriado para entidades geradores de pouco tráfego
+
+Linha Alugada/Dedicada:
+  -Circuíto permanente com ocupação permanente de recursos
+  -Não necessário estabeleciamento de chamada para iniciar transmissão de dados
+  -Maior segurança e disponibilidade de recursos
+  -Apropriado para entidades geradoras de recursos
+  -Atualmente têm a concorrência de serviço VPN(Virtual Private Network) que possibilita o transporte de dados privados de forma segura em redes públicas (internet) => + económico, mas com menor desempenho
+
+Serviços com e sem conexão:
+  Com conexão:
+    -Pacotes P1 e P2 com os mesmos endereços Origem e Destino efetuam o mesmo caminho na rede, em CS(circuit Switch) ou PS(Packet Switch)
+  Sem conexão:
+    -Pacotes P1 e P2 com os mesmos endereços Origem e Destino podem efetuar caminhos diferentes na rede, apenas em PS(Packet Switch)
+
+Garantia de QoS(Quality of Service):
+  A qualidade de um serviço é um atributo que define a sua prioridade, avaliada pelos parâmetros:
+    -Perda de dados por:
+      .Sobrecarga de rede
+      .Encaminhamento de rede
+    -Atrasos ou variações de atrasos (jitter)
+    -Ritmo de transmissão requerido
+  Rede deve satisfazer QoS:
+    -Marcação, diferenciação e encaminhamento de mensagens em função de diferentes prioridades
+    -Reserva de recursos e encaminhamento de mensagens em função das diferentes prioridades
+    -Sobredimensionamento da rede
+
+Controlo de Errros:
+  Anexão à mensagem da aplicação de informação adicional redundnate para controlo de erros de transmissão no recetor/destinatário
+  
+    n=bits da mensagem
+    n=bits que representam mensagem da aplicação
+    r = bits adicionais de dedundância/verificação
+
+  Verificação de erros:
+    Emissor: re = f (me)
+    Recetor: se re = f (mr) -> não deteta erro!
+             se rr = / = f (mr) -> deteta erros e pede retransmissão da mensagem
+
+Controlo de Fluxo de Dados:
+  -Protocolo que "regula" o débito da transmissão
+  -Terminais Emissor e Recetor podem não ter a mesma capacidade de processamento de dados
+  -Garantir que recetor consegue processar/armazenar volume de mensagens recebidas
