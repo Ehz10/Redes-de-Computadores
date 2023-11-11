@@ -1,0 +1,36 @@
+Modelo OSI(Open System Interconnection)
+  Desenvolvido em 1984
+
+Camadas
+  7-Aplicação
+  6-Apresentação
+  5-Sessão
+  4-Trnasporte
+  3-Rede
+  2-Ligação de Dados
+  1-Física
+
+7-Aplicação:
+  Fornece serviço de rede ao user;
+  Esses serviços que podem trabalhar com os dados que o user usa (Ex: http://);
+6-Apresentação:
+  Conversão de dados(encriptação ou desencriptação)
+5-Sessão:
+  Controlo de estabelecimento, gestão e terminação de sessões
+  Só depois de ter sido realizada a conexão é que os dados passam para a camada de 4.transporte
+4-Transporte:
+  Garante a comunicação fiável
+  Responsável pela transmissão de dados através de conexões de redes
+  Coordena a quantidade de dados a enviar, com rapidez, para o seu destino
+3-Rede:
+  Envia dados para o destino correto
+2-Ligação de Dados:
+  Configura links da rede física
+  Quando recebe dados da camada verifica se há erros de transmissão e empacota os bits em quadros de dados.
+  Gere os dados recebidos para as camadas MAC ou LLC
+  Dividida em duas subcamadas:
+    -Media Access Control (MAC)|Ex: 802.11 especificações sem fio:
+    -Logical Link Control (LLC):
+1-Física:
+  É a camada que estabelece a "real" ligações entre os dois dispositivos
+  Unidade de transmissão: bit
