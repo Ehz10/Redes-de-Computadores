@@ -22,6 +22,7 @@ Mensagens com dados da mesma ligação efetuam sempre o mesmo percurso em circui
   -Possibilidade de náo ser possível transmissão de mensagens por congestionamento de rede
   -Após estabelecimento de ligação não existem atrasos de propagação
   -Apropriado para ligações de ritmo constante
+->Nota:ver imagem "comutacao_circuitos"<-
 
 Comutação Pacotes (Packet Switch):
 Pacotes P1 e P2 com mesmo endereço de Origem e Destino podem efetuar percursos diferentes (ou iguais)
@@ -31,6 +32,7 @@ Pacotes Px e Py de outros users partilham os mesmos recursos de rede.
       ->Sempre possível transmissão de mensagens do emissor para a rede
     .Necessidade de processamento de mensagens em nós
       ->Possibilidade de existência de atrasos(sobrecarga)
+->Nota:ver imagem "comutacao_pacotes"<-
 
 LINHAS COMUTADAS/ALUGADAS
 
