@@ -1,1 +1,46 @@
+REDES E COMUNICAÇÔES
 
+Redes e Comunicações:
+  Cinjunto de computadores ligados entre si ou via outros elementos de rede através de um suporte físico
+
+Componentes e um rede de comunicação:
+  -Computadores/terminais(2 no mínimo)
+  -Elementos de rede encaminhadores, ex: routers, sitches
+  -Meios de transmissão:
+    .Informação(dados) é transmitida de acordo com regras de comunicação(protocolos)
+
+Objetivos de um rede de comunicação
+  -Permitir que diversos terminais comuniquem entre si
+    .Aumento de produtividade + redução de custos financeiros e humanos
+      ->Partilha de ficheiros
+      ->Partilha de periféricos
+      ->Facilitar centralização de aministração e segurança
+      ->Suporte a aplicações de rede
+  -Empresas e redes:
+    .Sem: 
+      ->O acesso à infromação e serviços muito mais lento e com mais custos
+      ->Os serviços "online" não seriam possíveis
+      ->A produtividade de pessoas e empresas seria muito menor e com mais custos
+    .Com:
+      ->O acesso à informação passa a ser independente da localização <=> globalização via Internet
+      ->Vantagens para empresas:
+        -Aumentar produtividade por uso de serviços de rede:
+          .Partilha de recursos
+          .Comunicação pessoal
+          .Facilitar gestão/escalabilidade
+        -Redução de custos:
+          .Gestão da informação
+          .Comunicação
+          .Partilha de recursos
+      ->Vantagens para pessoas individuais:
+        -Aumetar produtividade por uso de serviços de rede:
+          .Comunicação pessoal
+        -Acesso a infromação remota:
+          .Informação noticiosa
+          .Seriços online (e-learning, e-commerce)
+        -Entretenimento interativo:
+          .Jogos
+          .Streaming
+        -Redução de custos:
+          .Comunicação
+          .Acesso a informação
