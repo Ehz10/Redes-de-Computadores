@@ -21,3 +21,10 @@ Comutação de CS (circuito switch):
   -Possibilidade de náo ser possível transmissão de mensagens por congestionamento de rede
   -Após estabelecimento de ligação não existem atrasos de propagação
   -Apropriado para ligações de ritmo constante
+
+Comutação Pacotes (Packet Switch):
+  -Mensagens de users e aplicações usam recursos de rede não usam ligações dedicadas
+    .Não é necessário estabelecimento de circuito dedicado, entre emissor e recetor
+      ->Sempre possível transmissão de mensagens do emissor para a rede
+    .Necessidade de processamento de mensagens em nós
+      ->Possibilidade de existência de atrasos(sobrecarga)
