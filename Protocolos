@@ -1,0 +1,23 @@
+PROTOCOLOS
+
+Camada 4: TCP ou UDP
+Camada 3: IP
+Camada 2: Protocolo de Tecnologia Rede
+Camada 1: Protocolo de meio de Transmissão usado
+
+Características dos protocolos:
+  -Tipo de comutação: modo de encaminhamento
+    .Circuitos
+    .Pacotes
+  -Tipos de caminhos:
+    .Com conexão: orientados
+    .Sem conexão: não orientados
+  -Garantia de QoS (Quality of Service): definição da prioridade para processamento e encaminhamento
+  -Controlo de erros: deteção de eventuais erros
+  -Controlo de fluxo: possibilidade de Recetor informar Emissor de quantidade de dados
+
+Comutação de CS (circuito switch):
+  -Necessário conquistar vários troços dedicados de rede, desde o emissor até ao recetor
+  -Possibilidade de náo ser possível transmissão de mensagens por congestionamento de rede
+  -Após estabelecimento de ligação não existem atrasos de propagação
+  -Apropriado para ligações de ritmo constante
