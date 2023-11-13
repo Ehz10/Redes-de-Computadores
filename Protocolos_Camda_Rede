@@ -1,0 +1,11 @@
+ENDEREÇOS IP
+  Problemas do enedereço IPv4
+  Soluçóes Temporárias
+    Routing sem classe
+      .podem ser usadas em supernets ou subnets
+      .Usada ntoação CIDR(Classsless Inter Domain Routing)
+        ->x nº de bits(supernet x< 24)(subnet >= 24)
+    NAT(Network Address Translation
+    Endereços Dinâmicos
+  Solução Efectiva
+    IPv6
