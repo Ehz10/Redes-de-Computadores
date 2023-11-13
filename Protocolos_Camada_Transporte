@@ -1,0 +1,34 @@
+CAP 4. PROTOCOLOS DA CAMADA DE TRANSPORTE
+
+TCP
+UDP
+RTP
+SCTP(Stream control transmission Protocol)
+  Evolução do TCP, com as seguintes diferenças/melhorias:
+    .Melhor segurança contra ataques dos (Denial Of Service)
+      1->TCP: Ligação estabelecida com base em 3 mensagens / SCTP=> 4 mensagens
+      2->Suporte a Multi-Homing
+      3->SCTP faz o controlo de fluxo individual por stream
+
+CAP 3. PROTCOLO 2P P1
+  -PROTOCOLO IP = Internet Protocol
+    .Funções da camda de rede (C3 OSI)
+    .Encaminhamento de pacotes IP entre redes heterogéneas
+      ->Com base em endereço publico, unico de significado universal
+    .Comutação de pacotes
+    .Não orientado à ligação
+    .Não garante QoS => BEST EFFORt
+    .Não faz controlo de erros de dados
+    .Não faz controlo de fluxo
+
+ENDEREÇOS IP
+  Problemas do enedereço IPv4
+  Soluçóes Temporárias
+    Routing sem classe
+      .podem ser usadas em supernets ou subnets
+      .Usada ntoação CIDR(Classsless Inter Domain Routing)
+        ->x nº de bits(supernet x< 24)(subnet >= 24)
+    NAT(Network Address Translation
+    Endereços Dinâmicos
+  Solução Efectiva
+    IPv6
