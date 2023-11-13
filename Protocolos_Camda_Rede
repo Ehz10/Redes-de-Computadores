@@ -9,3 +9,15 @@ ENDEREÇOS IP
     Endereços Dinâmicos
   Solução Efectiva
     IPv6
+
+  Subnets:
+    -Facilitar gestão de redes
+      ->Definição de segmentos e de Terminais/Segmento
+      ->Possibilitar melhorar desempenho e segurança dos serviços
+      ->Invisível para redes exteriores, porque nao leem campo terminal
+    -Divisão de campo nºTerminal, em 2
+      ->Nº Subnet + nºTerminal
+        1Cálculo de subnet para encaminhamento de pacotes por routers
+
+
+  
