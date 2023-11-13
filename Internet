@@ -1,8 +1,22 @@
 INTERNET
 
 Internet
-  Possibilitar o acesso universal a informação/serviços remotos:
-    .
-    .
-    .
-      ->
+  -Possibilitar o acesso universal a informação/serviços remotos:
+    .Globalização <=> independência da localização do utilizador e da infromação/serviço a que pretende aceder
+    .Transformação Digital <=> Informação /serviços à distância de um "click"
+    .Possibilitar a comunicação pessoal universal à escola primária
+      ->Suportada por globalização
+
+Definição técnica da Internet:
+  -Conjunto de redes:
+    .Heterogéneas, interligadas entre si
+    .Independentes de tcnologia e meio físisco de transmissão
+    .Têm em comum a utilização dos protocolos TCP ou UDP e IP
+  -Protocolos de transporte de mensagens (camada 4 OSI):
+   TCP ou UDP
+    .TCP (Transmission Control Protocol) síncrona
+    .UDP (User Datagram Protocol) assíncrona
+  -Protocolo de encaminhamento de pacotes (camada 3 OSI)
+    .IP (Internet Protocol)
+      ->Possibilidade de encaminhamento de mensagens entre dois terminais (pacotes IP)
+      ->Suporta a comunicação planetária/universal entre pessoas e/ou máquinas
