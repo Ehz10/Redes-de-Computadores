@@ -1,0 +1,77 @@
+MEIOS DE TRANSMISSÃO
+
+Meios de transmissão:
+  Guiados: Fio de Cobre, Cabo Coaxial, Fibra Óptica
+  Não Guiados: Sem Fios (Wireless)
+
+  -Fio de Cobre:
+    .Transmissão se sinais elétricos
+    .Económico e de fácil instalação
+    .Baixa imunidade a interferências
+    .Grande atenuação => menor espaçamento entre repetidores
+    .Velocidades médias elevadas de transmissão em distâncias curtas
+    .Aplicações: telefone(inicial), xDSL (+recente) de suporte a 3Play
+  -Cabo coaxial:
+    .Transmissão de sinais elétricos
+    .Maior imunidade a interferências => menor atenuação que fio de cobre (maior blindagem e construção concêntrica)
+    .Maiores velocidades de transmissão em maiores distancias do que cobre (Centenas de Mits/s em alguns Km)
+    .Aplicações: TV cabo, LANs (iniciais), DOCSIS (+recente) de suporte a 3Play (TV, net e telefone)
+  -Fibras Óticas:
+    .Transmissão de sinais óticos a uma dada frequência
+    .Componentes das fibras
+    .Pequeno tamanho e peso
+    .Maior imunidade e interferências
+    .Baixa atenuação (Maior espaçamento entre repetidores)
+    .Suporte a grandes velocidades de transmissão (atualmente: Gbit/s, Futuro: Tbit/s)
+    .Desvantagens "relativas":
+      ->Instalação mais cara do que cobre
+      ->Ligações de terminações (Fibras com dimensões na ordem dos microns)
+    .Aplicações:
+      ->Interligação de redes, inicial
+      ->Comunicações de longa distancia, MANs e WANs, inicial
+      ->Ligações residenciais (FTTH - Fiber To The Home) + recente
+    .Icentivos:
+      ->Necessidade de maior largura de banda para satisfazer massificação de conteúdos mais exigentes:
+      ->Desempenho de (sobretudo) cobre e cabo condicionados por atenuação e limitados a pequenas distancias
+  -Comunicação sem Fios:
+    .Transmissão de ondas eletromagnéticas através do ar:
+      ->Ondas Rádio
+      ->Micro ondas
+      ->Bluetooth
+    .Tecnologia reente e com rápida expansão
+    .Velocidades de transmissão em crescimento, mas em média inferiores a cabo e fibra:
+      ->Regra de propagação de sinais rádio: +Velocidade de transmissão => +Frequência (&Largura de Banda) => +Atenuação
+      ->Atenuação condicionada pela (maio) frequência  e obstáculos ao sinal
+    .Aplicações
+      ->Suporte a Mobilidade => utilizadores com atividades que aplicam deslocações frequentes
+      ->Locais de difícil geográfica/económica instalação de cablagem
+      ->Instalações temporárias
+      ->Poupança de cablagem
+    .Espectro radioelétrico usados nas redes sem fios:
+      ->Diferentes redes e serviços distribuídos por diferentes frquências
+      ->Radiação não-ionizante => menos prejudicail à saúde
+
+
+Dispositivos de Conectividade:
+  Dispositivos que possibilitam a comunicação entre redes e terminais não ligados diretamente entre si <=> interligação de redes e terminais
+    -Encaminham mensagens => não são a origem/destino das mesmas
+    -Possibilitam a comunicação entre redes e terminais sem que estes tenham que estar ligados diretamente entre si <=> cenário irrealista
+  Repetidores:
+    -Regeneram (amplificam/repetem) sinal
+      ->Expandem o sinal para além dos limites dos cabos
+    -Não processam conteúdo do sinal (mensagens)
+      ->Funções de camada Física(Camada1 modelo OSI)
+
+  Hubs(Concentradores):
+    -Concentrador de tráfego de diferentes terminais
+    -Utilizados para ligar terminais de uma mesma LAN
+    -Não processam conteúdo do sinal
+      ->Funções de Camada Física(Camada 1 modelo OSI)
+      ->Podem ter função de repetidor em redes de maiores dimensões
+
+  Switch(Comutador):
+    -Encaminhador de mensagens:
+      .Verificação de endereço de terminal destino
+      .Comutação de trama para porta com ligação a terminal destino
+      .Funções de Camada Ligação de Dados (Camada2 modelo OSI)
+    -Usado com topologia em estrela
